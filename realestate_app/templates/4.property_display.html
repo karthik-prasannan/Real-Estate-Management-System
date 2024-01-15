@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i,j,k,l,m,n in data %}
+
+<img src="/static/{{j}}">
+<h1>{{k}}</h1>
+<h2>{{l}}</h2>
+<h2>{{m}}</h2>
+<h3>{{n}}</h3>
+
+<a><button>More</button></a>
+
+{% endfor %}
+</body>
+</html>

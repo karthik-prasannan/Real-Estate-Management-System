@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+
+<center><br><br>
+    <h1>Customer Profile</h1><br>
+<h3>{{data.name}}</h3>
+<h3>{{data.address}}</h3>
+<h3>{{data.email}}</h3>
+<h3>{{data.type}}</h3>
+<img src="/static/{{img1}}" style="height:250px;width:288px">
+</center>
+
+
+</body>
+</html>

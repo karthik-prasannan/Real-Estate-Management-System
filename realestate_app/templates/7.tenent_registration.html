@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+
+<center><br><br>
+  <h2>Tenent Registration</h2><br><br>
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+  <label>Name :</label>
+  <input type="text" name="name"><br><br>
+  <label>Address : </label>
+  <input type="text" name="address" style="margin-right:10px;"><br><br>
+  <label style="margin-left:10px;">Email : </label>
+  <input type="text" name="email" ><br><br>
+
+    <select class="form-select" aria-label="Default select example" name="type" style="width:170px;margin-left:40px">
+  <option selected>Proof</option>
+  <option value="Aadhaar">Aadhaar</option>
+  <option value="Voterid">Voter ID</option>
+</select><br><br>
+
+  <label style="margin-left:110px">Image : </label>
+    <input type="file" name="image" ><br><br>
+  <label>Password : </label>
+  <input type="text" name="password" style="margin-right:20px"><br><br>
+
+  <button type="submit" class="btn-primary">Submit</button>
+</center>
+
+
+</form>
+</body>
+</html>
